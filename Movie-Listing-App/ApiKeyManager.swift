@@ -10,22 +10,22 @@ import Foundation
 import KeychainSwift
 
 
-final class ApiKeyManager{
+final class AccessTokenMovieManager{
     
-    static let shared = ApiKeyManager()
+    static let shared = AccessTokenMovieManager()
     private let keychain = KeychainSwift()
-    private let movieApiKey = "MoviesApiKey"
+    private let accessTokenMovie = "AccessTokenMovieKey"
     
     private init(){
     }
     
     
-    func setKey(apiKey: String){
-        keychain.set(apiKey, forKey: movieApiKey)
+    func saveAccessTokenMovie(accessToken: String){
+        keychain.set(accessToken, forKey: accessTokenMovie)
     }
     
-    func getKey() -> String?{
-        return keychain.get(movieApiKey)
+    func getAccessTokenMovie() -> String?{
+        return keychain.get(accessTokenMovie)
     }
     
     

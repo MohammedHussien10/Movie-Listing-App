@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "97769C50-7EEB-4F78-A5CF-0D071ED016E7"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FAF12D01-BFCF-4BE1-ACB6-32656E36CA2A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Movie-Listing-App/Movie-List/View/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "40DB91DC-12F4-434C-BD5E-94D48523062A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Movie-Listing-App/Movie-List/Model/Movie.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "40DB91DC-12F4-434C-BD5E-94D48523062A - 75108aa430d9b5d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Movie_Listing_App.Movie.init(id: Swift.Int, title: Swift.String, poster_path: Swift.String, release_date: Swift.String, rating: Swift.String) -&gt; Movie_Listing_App.Movie"
+                  moduleName = "Movie-Listing-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macos/Desktop/Movie-Listing-App/Movie-Listing-App/Movie-List/Model/Movie.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "34">
+               </Location>
+               <Location
+                  uuid = "40DB91DC-12F4-434C-BD5E-94D48523062A - 8d9db0889170ff2a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Movie_Listing_App.Movie.init(id: Swift.Int, title: Swift.String, posterPath: Swift.Optional&lt;Swift.String&gt;, releaseDate: Swift.Optional&lt;Swift.String&gt;, voteAverage: Swift.Double, originalLanguage: Swift.Optional&lt;Swift.String&gt;, overview: Swift.Optional&lt;Swift.String&gt;) -&gt; Movie_Listing_App.Movie"
+                  moduleName = "Movie-Listing-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macos/Desktop/Movie-Listing-App/Movie-Listing-App/Movie-List/Model/Movie.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "40DB91DC-12F4-434C-BD5E-94D48523062A - 9127b3f0b3d2f895"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Movie_Listing_App.Movie.init(id: Swift.Int, title: Swift.String, poster_path: Swift.Optional&lt;Swift.String&gt;, release_date: Swift.Optional&lt;Swift.String&gt;, vote_average: Swift.Optional&lt;Swift.Double&gt;) -&gt; Movie_Listing_App.Movie"
+                  moduleName = "Movie-Listing-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macos/Desktop/Movie-Listing-App/Movie-Listing-App/Movie-List/Model/Movie.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "33">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

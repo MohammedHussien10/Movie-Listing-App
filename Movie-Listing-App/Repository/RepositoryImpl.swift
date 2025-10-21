@@ -2,7 +2,86 @@
 //  RepositoryImpl.swift
 //  Movie-Listing-App
 //
-//  Created by Macos on 16/09/2025.
-//
+
 
 import Foundation
+import Combine
+final class RepositoryImpl: Repository{
+    
+    
+    let remoteDataSource : RemoteDataSource
+    let localDataSource : LocalDataSource
+    
+    init(
+        remoteDataSource: RemoteDataSource,
+        localDataSource : LocalDataSource
+    ) {
+        self.remoteDataSource = remoteDataSource
+        self.localDataSource = localDataSource
+        
+    }
+    
+    
+    
+    func getMovies(category: MovieCategory) -> AnyPublisher<[Movie], APIError> {
+        
+        return remoteDataSource.getMovies(
+                       category: category
+                   )
+        
+//        if InternetChecker.shared.isConnected{
+//            
+//            return remoteDataSource.getMovies(
+//                category: category
+//            ).handleEvents(receiveOutput :{
+//                [weak self] movies in
+//                self?.localDataSource.saveMovies(movies,for: category)
+//                
+//            })
+//            .eraseToAnyPublisher()
+//        }else{
+//            return localDataSource
+//                .getMoviesLocal(
+//                    category: category
+//                ).eraseToAnyPublisher()
+//            
+//        }
+        
+        
+    }
+    
+    func getFavourites() -> AnyPublisher<
+        [Movie],
+        Never
+    > {
+        localDataSource.getFavouriteMovies()
+    }
+    
+    
+    func addMovieToFavourites(
+        movie: Movie
+    ) {
+        localDataSource.addMovieToFavourites(
+            movie: movie
+        )
+    }
+    
+    
+    func removeMovie(
+        id: Int
+    ) {
+        localDataSource.removeMovie(
+            id: id
+        )
+    }
+    
+    
+    func isFavourite(
+        id: Int
+    ) -> Bool {
+        localDataSource.isFavourite(
+            id: id
+        )
+    }
+    
+}

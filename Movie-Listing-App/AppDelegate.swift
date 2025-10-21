@@ -15,6 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        //Api key with keyChain
+        if AccessTokenMovieManager.shared.getAccessTokenMovie() == nil {
+            AccessTokenMovieManager.shared.saveAccessTokenMovie(accessToken:"eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMDE5NDAwNjM0ZDk4MjRmYjBkMzkyMWQwNjEzNzFkZCIsIm5iZiI6MTc1NzE4NDgxNi45NjgsInN1YiI6IjY4YmM4MzMwODM1NzQzYjNjNzA2OWE3MSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.-VPnr-DFlnJrgA7Orbvtd6M0QAqB4Lrb9oQFoEp6jMI")
+
+        }
+        
+        
         return true
     }
 
@@ -77,5 +86,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+    
+  
 }
 

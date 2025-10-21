@@ -2,7 +2,13 @@
 //  RemoteDataSource.swift
 //  Movie-Listing-App
 //
-//  Created by Macos on 16/09/2025.
+
 //
 
 import Foundation
+import Combine
+protocol RemoteDataSource{
+    
+    func getMovies(category:MovieCategory)-> AnyPublisher<[Movie], APIError>
+    
+}

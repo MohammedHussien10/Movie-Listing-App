@@ -2,7 +2,6 @@
 //  Favourites.swift
 //  Movie-Listing-App
 //
-//  Created by Macos on 14/09/2025.
 //
 
 import UIKit

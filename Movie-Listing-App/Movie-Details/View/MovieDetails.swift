@@ -2,7 +2,6 @@
 //  Movie_Details.swift
 //  Movie-Listing-App
 //
-//  Created by Macos on 12/09/2025.
 //
 
 import UIKit

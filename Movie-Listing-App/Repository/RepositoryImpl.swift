@@ -29,25 +29,6 @@ final class RepositoryImpl: Repository{
                        category: category
                    )
         
-//        if InternetChecker.shared.isConnected{
-//            
-//            return remoteDataSource.getMovies(
-//                category: category
-//            ).handleEvents(receiveOutput :{
-//                [weak self] movies in
-//                self?.localDataSource.saveMovies(movies,for: category)
-//                
-//            })
-//            .eraseToAnyPublisher()
-//        }else{
-//            return localDataSource
-//                .getMoviesLocal(
-//                    category: category
-//                ).eraseToAnyPublisher()
-//            
-//        }
-        
-        
     }
     
     func getFavourites() -> AnyPublisher<

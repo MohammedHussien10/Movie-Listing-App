@@ -2,7 +2,6 @@
 //  SceneDelegate.swift
 //  Movie-Listing-App
 //
-//  Created by Macos on 06/09/2025.
 //
 
 import UIKit

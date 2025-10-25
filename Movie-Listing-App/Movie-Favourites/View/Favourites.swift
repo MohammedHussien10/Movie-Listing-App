@@ -59,7 +59,6 @@ class Favourites: UIViewController,UITableViewDataSource, UITableViewDelegate{
         
         cell.releaseDate.text = movies.release_date?.onlyYear ?? "N/A"
         
-        print("result\(movies.release_date?.onlyYear ?? "N/A")")
         cell.selectionStyle = .none
         
         let isFav = favourtiesViewModel.isFavourite(id: Int(movies.id))
@@ -74,6 +73,17 @@ class Favourites: UIViewController,UITableViewDataSource, UITableViewDelegate{
         }
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let movies = favourtiesViewModel.favourites[indexPath.row]
+        
+        
+        guard let detailsVC = storyboard?.instantiateViewController(withIdentifier: "MovieDetails") as? MovieDetails else { return }
+        
+        detailsVC.movieDetailsViewModel = MovieDetailsViewModel(movie: movies)
+        
+        navigationController?.pushViewController(detailsVC, animated: true)
     }
 
     

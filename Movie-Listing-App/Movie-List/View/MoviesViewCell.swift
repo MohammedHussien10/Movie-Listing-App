@@ -2,7 +2,6 @@
 //  MoviesViewCell.swift
 //  Movie-Listing-App
 //
-//  Created by Macos on 20/09/2025.
 //
 
 import UIKit

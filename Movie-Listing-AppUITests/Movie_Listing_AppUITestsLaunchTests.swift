@@ -2,8 +2,6 @@
 //  Movie_Listing_AppUITestsLaunchTests.swift
 //  Movie-Listing-AppUITests
 //
-//  Created by Macos on 06/09/2025.
-//
 
 import XCTest
 
